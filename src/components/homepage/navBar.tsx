@@ -1,4 +1,6 @@
-export default function NavBar() {
+import { Button } from "@/components/ui/button";
+
+function NavBar() {
   return (
     <nav className="bg-rose-200 h-[10vh] w-screen flex items-center justify-between p-4">
       <section className="h-[50%] w-[15%] flex items-center justify-center border-red-500 border-2">
@@ -26,13 +28,11 @@ export default function NavBar() {
         </ul>
       </section>
       <section className="authentication flex gap-4">
-        <button className="bg-red-500 text-white px-4 py-2 rounded-md font-semibold">
-          LOGIN
-        </button>
-        <button className="bg-red-500 text-white px-4 py-2 rounded-md font-semibold">
-          SIGN UP
-        </button>
+        <Button variant="ghost">LOGIN</Button>
+        <Button variant="secondary">SIGN UP</Button>
       </section>    
     </nav>
   );
 }
+
+export default NavBar;
