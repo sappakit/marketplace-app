@@ -1,6 +1,6 @@
 import NavBar from "@/components/homepage/navBar";
 import Intro from "@/components/homepage/introBar";
-
+import Main from "@/components/homepage/main";
 
 function App() {
   return (
@@ -9,11 +9,8 @@ function App() {
         <NavBar />
         <Intro />
       </header>
-      <main>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate
-          voluptate. Voluptas, voluptate voluptate. Voluptas, voluptate voluptate.
-        </p>
+      <main className="bg-rose-50 h-[100vh] w-screen flex items-center justify-center">
+        <Main />
       </main>
       <footer>
 

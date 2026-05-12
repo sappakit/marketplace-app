@@ -5,8 +5,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+//import Autoplay from "embla-carousel-react";
 
-export default function Intro() {
+export default function Intro() { 
     return (
         <div>
             <section className="intro bg-rose-100 h-[30vh] w-screen flex items-center justify-center">
@@ -15,7 +16,10 @@ export default function Intro() {
                 </h1>
             </section>
             <section className="description bg-rose-50 h-[20vh] w-screen flex items-center justify-center">
-                <Carousel className="w-[80%]">
+                <Carousel 
+                    className="w-[80%]"
+                    
+                >
                     <CarouselContent>
                         <CarouselItem>
                             <p className="text-[1.2rem] text-center text-gray-700">
