@@ -15,25 +15,24 @@ export default function Intro() {
                     Welcome to Shopper!
                 </h1>
             </section>
-            <section className="description bg-rose-50 h-[20vh] w-screen flex items-center justify-center">
+            <section className="description bg-rose-50 h-[60vh] w-screen p-[5rem] flex items-center justify-center">
                 <Carousel 
-                    className="w-[80%]"
-                    
+                    className="w-[70%] h-[100%] p-[1rem] rounded-4xl bg-white flex justify-center items-center"                   
                 >
                     <CarouselContent>
                         <CarouselItem>
                             <p className="text-[1.2rem] text-center text-gray-700">
-                                Discover a wide range of products at unbeatable prices. Shop with confidence and enjoy a seamless shopping experience.
+                                Item01
                             </p>
                         </CarouselItem>
                         <CarouselItem>
                             <p className="text-[1.2rem] text-center text-gray-700">
-                                Find the latest trends and exclusive deals on our platform. We bring you the best shopping experience right at your fingertips.
+                                Item02
                             </p>
                         </CarouselItem>
                         <CarouselItem>
                             <p className="text-[1.2rem] text-center text-gray-700">
-                                Shop smarter, not harder. Explore our vast selection of products and enjoy fast shipping and excellent customer service.
+                                Item03
                             </p>
                         </CarouselItem>
                     </CarouselContent>
