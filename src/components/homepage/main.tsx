@@ -11,12 +11,12 @@ import { Button } from "@/components/ui/button";
 
 export default function Main() {
     return (
-        <div className="w-[100vw] h-[100vh] flex justify-center items-start">
-            <Card className="w-[70vw] h-[50vh] p-[1rem] border-2 border-red-500 flex-row justify-center items-center">
+        <main className="w-screen h-screen p-10 bg-rose-100 flex justify-center items-start">
+            <Card className="w-[70%] h-[50%] p-4 border-2 border-red-500 flex-row justify-center items-center">
                 <figure className="w-[40%] h-[90%] border flex justify-center items-center bg-green-100">
                     <h2>Item Photo</h2>
                 </figure>
-                <div className="w-[60%] h-[90%] border-2 border-red-500 flex-col content-between justify-items-center">
+                <div className="w-[60%] h-[90%] flex-col content-between justify-items-center">
                     <article>
                         <CardHeader>
                             <CardTitle>Product Name</CardTitle>
@@ -41,6 +41,6 @@ export default function Main() {
                     </div>                   
                 </div>                
             </Card>
-        </div>
+        </main>
     );
 }
