@@ -1,20 +1,31 @@
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { BsTwitterX } from "react-icons/bs";
+
+
 export default function Footer() {
     return (
-        <footer className="w-screen h-[30vh] bg-rose-50 flex-col">
+        <footer className="w-screen h-[30vh] bg-gray-100 flex-col">
             <section className="w-[70%] h-[90%] p-10 justify-self-center flex justify-center items-center">
-                <div className="w-[50%] h-full bg-amber-400 flex-col justify-items-center content-center">
-                    <h2>Logo</h2>
-                    <p>Social media</p>
+                <div className="w-[50%] h-full leading-20 flex-col justify-items-center content-center">
+                    <p className="text-[3rem] sm:text-[2rem] text-center font-bold text-red-500">
+                        SHOPPER
+                    </p>
+                    <div className="w-full h-[50%] flex justify-center items-center gap-10">
+                        <FaFacebook className="w-7 h-auto cursor-pointer hover:scale-120"/>
+                        <RiInstagramFill className="w-7 h-auto cursor-pointer hover:scale-120"/>
+                        <BsTwitterX className="w-7 h-auto cursor-pointer hover:scale-120"/>
+                    </div>
                 </div>
-                <div className="w-[50%] h-full p-10 bg-blue-400 flex justify-evenly items-center">
-                    <ul>
-                        <li>Privacy</li>
-                        <li>Term</li>
-                        <li>About us</li>
+                <div className="w-[50%] h-full p-10 flex justify-evenly items-center">
+                    <ul className="self-start leading-10">
+                        <li className="cursor-pointer hover:underline">Privacy</li>
+                        <li className="cursor-pointer hover:underline">Term</li>
+                        <li className="cursor-pointer hover:underline">About us</li>
                     </ul>
-                    <ul>
-                        <li>Contact us</li>
-                        <li>Map</li>
+                    <ul className="self-start leading-10">
+                        <li className="cursor-pointer hover:underline">Contact us</li>
+                        <li className="cursor-pointer hover:underline">Map</li>
                     </ul>
                 </div>
             </section>

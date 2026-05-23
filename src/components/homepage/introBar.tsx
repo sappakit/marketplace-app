@@ -11,29 +11,33 @@ export default function Intro() {
     return (
         <div>
             <section className="intro bg-rose-100 h-[30vh] w-screen flex items-center justify-center">
-                <h1 className="text-[3rem] font-bold text-red-500">
+                <h1 className="text-[2.5rem] font-bold text-red-500">
                     Welcome to Shopper!
                 </h1>
             </section>
-            <section className="description bg-rose-50 h-[60vh] w-screen p-[5rem] flex items-center justify-center">
+            <section className="description bg-rose-50 h-[60vh] w-screen p-20 flex items-center justify-center">
                 <Carousel 
-                    className="w-[70%] h-[100%] p-[1rem] rounded-4xl bg-white flex justify-center items-center"                   
+                    className="w-150 h-140 xl:w-170 xl:h-120 rounded-4xl bg-white flex justify-center content-center"                   
+                    
                 >
-                    <CarouselContent>
-                        <CarouselItem>
-                            <p className="text-[1.2rem] text-center text-gray-700">
-                                Item01
-                            </p>
+                    <CarouselContent className="w-full h-full">
+                        <CarouselItem className="w-full h-full">
+                            <img src="src\assets\shirts_stock\Shirt01.png" alt="gray-Tshirt" className="w-full h-full rounded-4xl"/>
                         </CarouselItem>
-                        <CarouselItem>
-                            <p className="text-[1.2rem] text-center text-gray-700">
-                                Item02
-                            </p>
+                        <CarouselItem className="w-full h-full">
+                            <img src="src\assets\shirts_stock\Shirt02.png" alt="white-Tshirt" className="w-full h-full rounded-4xl"/>
                         </CarouselItem>
-                        <CarouselItem>
-                            <p className="text-[1.2rem] text-center text-gray-700">
-                                Item03
-                            </p>
+                        <CarouselItem className="w-full h-full">
+                            <img src="src\assets\shirts_stock\Shirt03.png" alt="dark-Tshirt" className="w-full h-full rounded-4xl"/>
+                        </CarouselItem>
+                        <CarouselItem className="w-full h-full">
+                            <img src="src\assets\shirts_stock\Shirt04.png" alt="jean" className="w-full h-full rounded-4xl"/>
+                        </CarouselItem>
+                        <CarouselItem className="w-full h-full">
+                            <img src="src\assets\shirts_stock\Shirt05.png" alt="gray-hoodshirt" className="w-full h-full rounded-4xl"/>
+                        </CarouselItem>
+                        <CarouselItem className="w-full h-full">
+                            <img src="src\assets\shirts_stock\Shirt06.png" alt="dark-yellow-trouser" className="w-full h-full rounded-4xl"/>
                         </CarouselItem>
                     </CarouselContent>
                     <CarouselPrevious />

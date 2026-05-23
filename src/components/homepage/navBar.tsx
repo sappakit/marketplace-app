@@ -1,36 +1,40 @@
 import { Button } from "@/components/ui/button";
-import { House, BookOpenText, Bell, ShoppingCart, UserRound} from 'lucide-react';
+import { House, BookOpenText, Bell, ShoppingCart, UserRound, Sun, Moon} from 'lucide-react';
 
 function NavBar() {
   return (
-    <nav className="bg-rose-200 h-[10vh] w-screen flex items-center justify-between p-4">
-      <section className="h-[35%] w-[30%] sm:h-[55%] sm:w-[22%] xl:h-[40%] xl:w-[15%] flex items-center justify-center border-red-500 border-2">
-        <h1 className="w-full h-full text-[1rem] sm:text-[2rem] text-center font-bold text-red-500">
+    <nav className="bg-rose-200 h-[7vh] w-screen flex items-center justify-between p-6">
+      <section className="h-[70%] w-[30%] sm:h-[55%] sm:w-[22%] xl:h-[40%] xl:w-[15%] flex items-center justify-center">
+        <h1 className="text-[1.25rem] md:text-[2rem] text-center font-bold text-red-500">
           SHOPPER
         </h1>
       </section>                                                                      
       <section className="list-button">
-        <ul className="flex gap-4">
+        <ul className="flex gap-8">
           <li className="text-red-500 cursor-pointer">
-            <House className="w-8 h-8"/>
+            <House className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300"/>
           </li>
           <li className="text-red-500 cursor-pointer">
-            <BookOpenText className="w-8 h-8"/>
+            <BookOpenText className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300"/>
           </li>
           <li className="text-[1.1rem] font-semibold text-red-500 cursor-pointer">
-            <Bell className="w-8 h-8"/>
+            <Bell className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300"/>
           </li>
           <li className="text-[1.1rem] font-semibold text-red-500 cursor-pointer">
-            <ShoppingCart className="w-8 h-8"/>
+            <ShoppingCart className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300"/>
           </li>
           <li className="text-[1.1rem] font-semibold text-red-500 cursor-pointer">
-            <UserRound className="w-8 h-8"/>
+            <UserRound className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300"/>
           </li>
         </ul>
       </section>
-      <section className="authentication flex gap-4">
-        <Button variant="ghost">LOGIN</Button>
-        <Button variant="secondary">SIGN UP</Button>
+      <section className="right-button flex items-center gap-6">
+        <div className="p-1 border-3 border-black rounded-full flex">
+          <Sun className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"/>
+          <Moon className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"/>
+        </div>        
+        <Button variant="secondary" className="w-6 h-6 md:w-8 md:h-8 cursor-pointer">LOGIN</Button>
+        <Button variant="secondary" className="w-6 h-6 md:w-8 md:h-8 cursor-pointer">SIGN UP</Button>
       </section>    
     </nav>
   );
