@@ -1,6 +1,6 @@
 export default function MainProfile() {
     return (
-        <div className="w-screen h-screen bg-blue-50 flex items-center justify-center">
+        <div className="w-screen h-screen bg-orange-100 flex items-center justify-center">
             <section>
                 <img />
                 <div>

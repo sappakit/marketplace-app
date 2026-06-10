@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { House, BookOpenText, Bell, ShoppingCart, UserRound, Sun, Moon} from 'lucide-react';
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 
 function NavBar({clickPage}: {clickPage: (page: string) => void}) {
@@ -11,48 +11,35 @@ function NavBar({clickPage}: {clickPage: (page: string) => void}) {
   //กำลังจะทำให้เป็นแบบเดียวกับ profile คือส่งค่าไปที่ App แล้วให้ App เปลี่ยนหน้า แต่ตอนนี้ยังไม่สำเร็จเลยใช้ setTimeout 
   //แทนเพื่อให้แน่ใจว่า state ได้รับการอัพเดตก่อนที่จะส่งค่าไปที่ App ซึ่งเป็นวิธีแก้ปัญหาชั่วคราวที่ไม่ค่อยดีนัก แต่ตอนนี้ยังไม่มีวิธีอื่นที่ดีกว่าในการจัดการกับปัญหานี้
   //Home page
+  useEffect(() => {
+    if (page) {
+      console.log(page,"click");
+      clickPage(page);
+    }
+
+  }, [page]);
+ 
   const handleHomeClick = () => {
     setPage("home");
-    setTimeout(() => {
-        console.log(page,"click");
-        clickPage(page);
-    }, 100);
-  }
-
+  } 
   //Promotion page
   const handlePromotionClick = () => {
     setPage("promotion");
-    setTimeout(() => {
-        console.log(page,"click");
-        clickPage(page);
-    }, 100);
   }
 
   //Notification page
   const handleNotificationClick = () => {
     setPage("notification");
-    setTimeout(() => {
-        console.log(page,"click");
-        clickPage(page);
-    }, 100);
   }
 
   //Basket page
   const handleBasketClick = () => {
     setPage("Basket");
-    setTimeout(() => {
-        console.log(page,"click");
-        clickPage(page);
-    }, 100);
   }
 
-  //Profile page
+  //rofile page
   const handleProfileClick = () => {
     setPage("profile");
-    setTimeout(() => {
-        console.log(page,"click");
-        clickPage(page);
-    }, 100);
   }
 
 
