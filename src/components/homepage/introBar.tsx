@@ -9,7 +9,7 @@ import {
 
 export default function Intro() { 
     return (
-        <div>
+        <div className="w-screen">
             <form className="w-screen h-[10vh] p-2 fixed z-10 text-center">
                 <input type="text" placeholder="Search for products, brands and more" className="w-[40%] h-10 md:w-[40%] md:h-12 xl:w-[20%] rounded-full border-2 border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-red-300"/>
                 <button type="submit" className="ml-2 px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Search</button>

@@ -29,7 +29,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </section>
-            <section className="w-full h-[10%] self-end flex justify-center items-center bg-gray-800 text-white">
+            <section className="w-screen h-[10%] self-end flex justify-center items-center bg-gray-800 text-white">
                 <p>&copy; 2024 Your Company. All rights reserved.</p>
             </section>
         </footer>

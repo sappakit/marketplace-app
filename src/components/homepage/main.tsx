@@ -10,7 +10,7 @@ import { Heart, ShoppingCart } from 'lucide-react';
 
 export default function Main() {
     return (
-        <main className="w-screen h-auto p-10 bg-rose-100 flex justify-center items-start">
+        <main className="w-screen h-auto p-10 rounded-2xl bg-rose-100 flex justify-center items-start">
             <Card className="w-[60%] h-auto xl:w-[40%] xl:h-[40%] p-4">
                 <section className="profile w-full h-[20%] flex items-center gap-4 cursor-pointer">
                     <img src="src\assets\profile_image.jpg" alt="Edward Elric profile" className="w-15 h-15 rounded-full object-cover"></img>
