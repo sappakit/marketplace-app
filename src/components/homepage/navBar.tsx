@@ -1,6 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { House, BookOpenText, Bell, ShoppingCart, UserRound, Sun, Moon} from 'lucide-react';
 import { useState , useEffect } from "react";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 
 function NavBar({clickPage}: {clickPage: (page: string) => void}) {
@@ -59,7 +69,25 @@ function NavBar({clickPage}: {clickPage: (page: string) => void}) {
             <BookOpenText className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300" onClick={handlePromotionClick}/>
           </li>
           <li className="text-[1.1rem] font-semibold text-red-500 cursor-pointer">
-            <Bell className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300" onClick={handleNotificationClick}/>
+            <Sheet>
+              <SheetTrigger>
+                <Bell className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300" onClick={handleNotificationClick}/>
+              </SheetTrigger>
+              <SheetContent 
+                side="top"
+                className="w-screen h-[30vh] bg-rose-100 flex items-center justify-center"
+              >
+                <SheetHeader>
+                  <SheetTitle>Notification</SheetTitle>
+                  <SheetDescription>
+                    You have 3 new notifications.
+                  </SheetDescription>
+                </SheetHeader>
+                <SheetFooter>
+                  <SheetClose render={<Button variant="outline">Close</Button>} />
+                </SheetFooter>
+              </SheetContent>
+            </Sheet>            
           </li>
           <li className="text-[1.1rem] font-semibold text-red-500 cursor-pointer">
             <ShoppingCart className="w-6 h-6 md:w-8 md:h-8 hover:text-red-300" onClick={handleBasketClick}/>

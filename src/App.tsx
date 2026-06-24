@@ -4,7 +4,6 @@ import Main from "@/components/homepage/main";
 import Footer from "@/components/homepage/footer";
 import MainProfile from "@/components/profilepage/main_profile";
 import MainBasket from "@/components/basketpage/main_basket";
-import MainNotification from "@/components/notificationpage/main_notification";
 import MainPromotion from "@/components/promotionpage/main_promotion";
 import { useState , useEffect } from "react";
 
@@ -28,7 +27,7 @@ function App() {
         setMainPage(<MainPromotion />);
         break;
       case "notification":
-        setMainPage(<MainNotification />);
+        setMainPage(mainPage);
         break;
       case "Basket":
         setMainPage(<MainBasket />);
