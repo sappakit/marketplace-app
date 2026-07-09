@@ -47,11 +47,23 @@ function NavBar({clickPage}: {clickPage: (page: string) => void}) {
     setPage("Basket");
   }
 
+<<<<<<< HEAD
   //rofile page
+=======
+  //profile page
+>>>>>>> 48022da (15th commit add Log-in and Sign-up pages)
   const handleProfileClick = () => {
     setPage("profile");
   }
 
+<<<<<<< HEAD
+=======
+  //Sign up page
+  const handleSignUpClick = () => {
+    setPage("signup");
+  }
+
+>>>>>>> 48022da (15th commit add Log-in and Sign-up pages)
 
   return (
     <nav className="sticky top-0 z-10 bg-rose-200 h-[7vh] w-screen flex items-center justify-between p-6">
@@ -101,9 +113,37 @@ function NavBar({clickPage}: {clickPage: (page: string) => void}) {
         <div className="p-1 border-3 border-black rounded-full flex">
           <Sun className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"/>
           <Moon className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"/>
+<<<<<<< HEAD
         </div>        
         <Button variant="secondary" className="w-15 h-6 md:w-15 md:h-10 cursor-pointer">LOGIN</Button>
         <Button variant="secondary" className="w-15 h-6 md:w-15 md:h-10 cursor-pointer">SIGN UP</Button>
+=======
+        </div>
+        <Sheet>
+          <SheetTrigger>
+            <Button variant="secondary" className="w-15 h-6 md:w-15 md:h-10 cursor-pointer">LOGIN</Button>
+          </SheetTrigger>
+          <SheetContent 
+            side="right"
+            className="w-full h-full bg-rose-100 flex items-center justify-start p-5"
+          >
+            <SheetHeader>
+              <SheetTitle>Login</SheetTitle>
+              <SheetDescription>
+                Please enter your login credentials.
+                <form>
+                  <input type="text" placeholder="Username" className="p-2 border border-gray-300 bg-white rounded-md w-full mb-4" />
+                  <input type="password" placeholder="Password" className="p-2 border border-gray-300  bg-white rounded-md w-full mb-4" />
+                  <Button variant="default" type="submit" className="w-full p-2 rounded-md bg-red-500 text-white hover:bg-red-600">
+                    Login
+                  </Button>
+                </form>
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>        
+        <Button className="w-15 h-6 md:w-15 md:h-10 cursor-pointer p-2 bg-white text-black" onClick={handleSignUpClick}>SIGN UP</Button>
+>>>>>>> 48022da (15th commit add Log-in and Sign-up pages)
       </section>    
     </nav>
   );

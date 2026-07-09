@@ -5,6 +5,10 @@ import Footer from "@/components/homepage/footer";
 import MainProfile from "@/components/profilepage/main_profile";
 import MainBasket from "@/components/basketpage/main_basket";
 import MainPromotion from "@/components/promotionpage/main_promotion";
+<<<<<<< HEAD
+=======
+import SignUpPage from "@/components/signup_page/signup_page";
+>>>>>>> 48022da (15th commit add Log-in and Sign-up pages)
 import { useState , useEffect } from "react";
 
 function App() {
@@ -35,6 +39,12 @@ function App() {
       case "profile":
         setMainPage(<MainProfile />);
         break;
+<<<<<<< HEAD
+=======
+      case "signup":
+        setMainPage(<SignUpPage />);
+        break;
+>>>>>>> 48022da (15th commit add Log-in and Sign-up pages)
       default:
         setMainPage(          
           <>

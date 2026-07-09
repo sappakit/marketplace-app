@@ -7,7 +7,11 @@ export default function MainPromotion() {
         <main className="w-screen h-screen bg-rose-100 flex items-center justify-center">
             <div className="w-[70%] h-[90%] rounded-4xl flex items-start justify-evenly p-5">
                 <section className="w-[62%] h-full bg-white rounded-2xl p-10 flex flex-col items-center justify-start">
+<<<<<<< HEAD
                     <h1 className="self-start font-extrabold text-xl">Save Items</h1>
+=======
+                    <h1 className="self-start font-extrabold text-xl">Promotion</h1>
+>>>>>>> 48022da (15th commit add Log-in and Sign-up pages)
                     <div className="w-full mt-4 p-4 rounded-xl">
                         <figure className="w-full h-[20vh] flex items-center justify-center gap-4 border-2 border-red-400 rounded-xl">
                             <img src="src\assets\shirts_stock\Shirt01.png" alt="Product A" className="w-[40%] h-[100%] rounded-xl object-cover"></img>
