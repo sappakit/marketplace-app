@@ -4,10 +4,6 @@
 @import "@fontsource-variable/geist";
 
 
-* {
-
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

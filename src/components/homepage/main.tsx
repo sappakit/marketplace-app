@@ -18,11 +18,11 @@ export default function Main() {
                         Jonathan Doe's Store
                     </h1>
                 </section>
-                <section className="content w-full h-auto p-4 flex justify-between items-center">
-                    <figure className="w-[50%] h-[90%] flex justify-center items-center">
+                <section className="content w-full h-auto flex justify-between items-center">
+                    <figure className="w-[50%] h-full flex justify-center items-center">
                         <img src="src\assets\shirts_stock\Shirt07.png" alt="Edward Elric profile" className="w-full h-auto rounded-xl"></img>
                     </figure>
-                    <div className="w-[50%] h-[90%] flex-col items-between justify-items-center">
+                    <div className="w-[50%] h-full flex-col items-between justify-items-center">
                         <article className="w-full h-[80%]">
                             <CardHeader>
                                 <CardTitle className="text-xl">-Dark Trouser-</CardTitle>                   
@@ -40,7 +40,7 @@ export default function Main() {
                             </CardContent>
                         </article>
                         <div className="w-full h-[20%] self-end flex justify-end">
-                            <CardFooter className="w-25 h-20 flex justify-end gap-4 bg-transparent border-0">
+                            <CardFooter className="w-25 h-20 flex justify-end gap-4 bg-transparent">
                                 <Heart className="w-[80%] h-[80%] cursor-pointer hover:scale-120 hover:text-red-500"/>
                                 <ShoppingCart className="w-[80%] h-[80%] cursor-pointer hover:scale-120 hover:text-red-500"/>
                             </CardFooter>

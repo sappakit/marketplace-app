@@ -40,7 +40,7 @@ export default function MainProfile() {
                     </p> 
                 </div>
             </aside>
-            <section className="w-[40%] h-[100%] xl:w-[40%] p-4 rounded-xl bg-white flex flex-col items-start justify-start">
+            <section className="w-[40%] h-full xl:w-[40%] p-4 rounded-xl bg-white flex flex-col items-start justify-start">
                 <h2 className="text-2xl font-bold mb-4">Recent Activity</h2>
                 <ul>
                     <li className="text-xl">Purchased "Product A" on 2024-05-01</li>
