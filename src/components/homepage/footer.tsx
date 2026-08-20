@@ -5,8 +5,8 @@ import { BsTwitterX } from "react-icons/bs";
 
 export default function Footer() {
     return (
-        <footer className="w-screen h-[30vh] bg-gray-100 flex-col">
-            <section className="w-[70%] h-[90%] p-10 justify-self-center flex justify-center items-center">
+        <footer className="w-full h-auto bg-gray-100 flex-col">
+            <section className="w-full h-[90%] p-10 justify-self-center flex justify-center items-center">
                 <div className="w-[50%] h-full leading-20 flex-col justify-items-center content-center">
                     <p className="text-[3rem] sm:text-[2rem] text-center font-bold text-red-500">
                         SHOPPER
@@ -29,7 +29,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </section>
-            <section className="w-screen h-[10%] self-end flex justify-center items-center bg-gray-800 text-white">
+            <section className="w-full h-[10%] self-end flex justify-center items-center bg-gray-800 text-white">
                 <p>&copy; 2024 Your Company. All rights reserved.</p>
             </section>
         </footer>
